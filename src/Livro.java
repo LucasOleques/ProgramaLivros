@@ -1,4 +1,7 @@
 public class Livro {
+
+    private int posicao;
+    private int numprateleira;
     private String nomelivro;
     private String editora;
     private String autor;
@@ -8,8 +11,11 @@ public class Livro {
     private int datainclusao;
     private int avaliacao;
     private String resumo;
-    public Livro(String nomelivro, String editora, String autor, String categoria, String idioma,
+    //-------------------------------------------------------------------------------------------
+    public Livro(int posicao, int numprateleira, String nomelivro, String editora, String autor, String categoria, String idioma,
                  int numeropagina, int datainclusao, int avaliacao, String resumo) {
+        this.posicao = posicao;
+        this.numprateleira = numprateleira;
         this.nomelivro = nomelivro;
         this.editora = editora;
         this.autor = autor;
@@ -20,7 +26,13 @@ public class Livro {
         this.avaliacao = avaliacao;
         this.resumo = resumo;
     }
-    //--------------------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------------------
+    public void setPosicao(int posicao) {
+        this.posicao = posicao;
+    }
+    public void setNumprateleira(int numprateleira) {
+        this.numprateleira = numprateleira;
+    }
     public void setNomelivro(String nomelivro) {
         this.nomelivro = nomelivro;
     }
@@ -49,6 +61,12 @@ public class Livro {
         this.resumo = resumo;
     }
     //--------------------------------------------------------------------------------------------
+    public int getPosicao() {
+        return posicao;
+    }
+    public int getNumprateleira() {
+        return numprateleira;
+    }
     public String getNomelivro() {
         return nomelivro;
     }

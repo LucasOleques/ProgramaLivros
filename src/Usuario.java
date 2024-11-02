@@ -1,6 +1,8 @@
 public class Usuario {
     private String loginusuario;
     private String senhausuario;
+
+    //--------------------------------------------------------------------------------------------
     public Usuario(String loginusuario, String senhausuario) {
         this.loginusuario = loginusuario;
         this.senhausuario = senhausuario;
@@ -19,4 +21,5 @@ public class Usuario {
     public void setSenhausuario(String senhausuario) {
         this.senhausuario = senhausuario;
     }
+    //--------------------------------------------------------------------------------------------
 }
