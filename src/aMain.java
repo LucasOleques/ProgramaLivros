@@ -4,9 +4,11 @@ import java.util.Scanner;
 public class aMain {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         int posicao = 0;
         int numprateleira = 0;
         int[][] prateleira = new int[posicao][numprateleira];
+
         System.out.println("Qual a posição do Livro? ");
         posicao = scan.nextInt();
         System.out.println("Qual a prateleira do Livro? ");
