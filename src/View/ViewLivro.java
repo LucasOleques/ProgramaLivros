@@ -20,20 +20,11 @@ public class ViewLivro {
         System.out.println("Qual o autor do livro? ");
         String autor = scan.next();
         System.out.println("Qual a categoria do livro? ");
-        String categoria = scan.next();
-        System.out.println("Qual o idioma do livro? ");
         String idioma = scan.next();
-        System.out.println("Qual a numeropagina do livro? ");
+        System.out.println("Qual o numero depagina do livro? ");
         int numeropagina = scan.nextInt();
-        System.out.println("Qual a datainclusao do livro? ");
-        int datainclusao = scan.nextInt();
-        System.out.println("Qual a avaliacao do livro? ");
-        int avaliacao = scan.nextInt();
-        System.out.println("Digite um breve resumo do livro: ");
-        String resumo = scan.next();
 
-        Livro livro = new Livro(nomelivro, editora, autor, categoria,
-                idioma, numeropagina, datainclusao, avaliacao, resumo);
+        Livro livro = new Livro(nomelivro, editora, autor, idioma, numeropagina);
         ControllerLivro.createLivro(livro);
 
         System.out.println("Qual a posição do livro? ");

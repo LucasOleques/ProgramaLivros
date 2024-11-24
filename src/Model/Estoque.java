@@ -1,7 +1,5 @@
 package Model;
 
-import java.util.ArrayList;
-
 public class Estoque{
 
     private ArrayList<Livro> listalivros = new ArrayList<>();
