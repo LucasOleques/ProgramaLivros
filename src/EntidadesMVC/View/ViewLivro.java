@@ -1,15 +1,11 @@
-package View;
+package EntidadesMVC.View;
 
-import Controller.ControllerEstoque;
-import Controller.ControllerLivro;
-import Model.Estoque;
-import Model.Livro;
+import EntidadesMVC.Controller.ControllerLivro;
 
-import java.util.Scanner;
+import static EntidadesMVC.View.MenuGeral.*;
 
 public class ViewLivro {
 
-    static Scanner scan = new Scanner(System.in);
     static int opcao;
 
     public static void exibirCreateLivro() {
@@ -19,21 +15,22 @@ public class ViewLivro {
         String editora = scan.next();
         System.out.println("Qual o autor do livro? ");
         String autor = scan.next();
-        System.out.println("Qual a categoria do livro? ");
-        String idioma = scan.next();
         System.out.println("Qual o numero depagina do livro? ");
         int numeropagina = scan.nextInt();
 
-        Livro livro = new Livro(nomelivro, editora, autor, idioma, numeropagina);
-        ControllerLivro.createLivro(livro);
+        /**
+         * Livro livro = new Livro(nomelivro, editora, autor, numeropagina);
+         *         ControllerLivro.createLivro(livro);
+         *
+         *         System.out.println("Qual a posição do livro? ");
+         *         int posicao = scan.nextInt();
+         *         System.out.println("Qual a prateleira do livro? ");
+         *         int numprateleira = scan.nextInt();
+         *
+         *         Estoque estoque = new Estoque(posicao, numprateleira);
+         *         ControllerEstoque.createLivroNoEstoque(estoque);
+         */
 
-        System.out.println("Qual a posição do livro? ");
-        int posicao = scan.nextInt();
-        System.out.println("Qual a prateleira do livro? ");
-        int numprateleira = scan.nextInt();
-
-        Estoque estoque = new Estoque(posicao, numprateleira);
-        ControllerEstoque.createLivroNoEstoque(estoque);
     }
 
     public static void exibirReadLivro(){

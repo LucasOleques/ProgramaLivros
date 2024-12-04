@@ -1,6 +1,6 @@
-package Controller;
+package EntidadesMVC.Controller;
 
-import Model.Livro;
+import EntidadesMVC.Model.Livro;
 
 import java.util.ArrayList;
 

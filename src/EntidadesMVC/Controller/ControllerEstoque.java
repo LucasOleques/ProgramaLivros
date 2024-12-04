@@ -1,12 +1,12 @@
-package Controller;
+package EntidadesMVC.Controller;
 
-import Model.Estoque;
-
+import EntidadesMVC.Model.Estoque;
 import java.util.ArrayList;
+import java.util.List;
 
 public class ControllerEstoque {
 
-    private static ArrayList<Estoque> listalivrosestoque = new ArrayList<>();
+    private static List<Estoque> listalivrosestoque = new ArrayList<>();
 
     public static void createLivroNoEstoque(Estoque estoque){
         listalivrosestoque.add(estoque);
