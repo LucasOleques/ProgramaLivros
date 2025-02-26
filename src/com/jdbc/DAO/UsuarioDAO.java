@@ -74,7 +74,7 @@ public class UsuarioDAO {
         return usuario; // Retorna null se o usuário não for encontrado
     }
 
-    public boolean alterarUsuarioDB(String loginUsuario, String novoNome, String novaSenha) {
+    public static boolean alterarUsuarioDB(String loginUsuario, String novoNome, String novaSenha) {
         String sql = "UPDATE USUARIO SET NOMEUSUARIO = ?, SENHAUSUARIO = ? WHERE LOGINUSUARIO = ?";
 
         try (Connection conn = DataBaseConnection.getConexao();
